@@ -72,16 +72,20 @@ simulation:
    cd blackjack-simulation
     ```
 
-2. **Build the project**:
+2. **Running the Application Locally**:
 
-   ```bash
-   mvn clean install
-    ```
+The project includes a Maven wrapper, so you don’t need to install Maven manually. To run the application:
 
-3. **Run the application**:
+- On Unix-like Systems (Linux, macOS):
+
     ```bash
-    mvn spring-boot:run
-     ```
+    ./mvnw spring-boot:run
+    ```
+- On Windows:
+
+    ```bash
+    mvnw.cmd spring-boot:run
+    ```
 
 ## Contact
 
