@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: BlackjackSimulation
+
+reports:
+  enabled: false
+  directory: reports
+
+strategy:
+  game:
+    parallel: false
+  bet:
+    step: 5
+    enabled: martingale
+    flat:
+      bet: 25
+    martingale:
+      cap: 1000
+      initialBet: 25
+  balance:
+    initial: 100000
+
+simulation:
+  rounds: 10000
+  repetitions: 10
